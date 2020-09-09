@@ -1,0 +1,9 @@
+FROM antiggl/btcu-builder
+MAINTAINER Antonios Inglezakis <inglezakis.a@unic.ac.cy>
+COPY ./btcu-bin/bin /usr/local/bin
+COPY ./btcu-bin/share /usr/local/share
+
+WORKDIR /root/
+CMD btcud
+
+
